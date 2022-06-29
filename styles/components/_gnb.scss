@@ -1,0 +1,19 @@
+.gnb {
+  width: 100%;
+
+  .tabList {
+    @include flexbox();
+    border-bottom: 1px solid $gray;
+  }
+
+  .tabItem {
+    width: 50%;
+
+    button {
+      width: 100%;
+      padding: 1rem 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+}
