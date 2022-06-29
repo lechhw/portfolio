@@ -27,11 +27,11 @@
   @include responsive(T) {
     .tabList {
       justify-content: flex-start;
-      padding-left: 0.5rem;
+      padding-left: 1.5rem;
     }
 
     .tabItem {
-      width: 6rem;
+      width: 8rem;
       margin-right: 1rem;
 
       &:last-child {
@@ -39,7 +39,7 @@
       }
 
       button {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
     }
   }
