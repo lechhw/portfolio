@@ -8,3 +8,5 @@ node_modules/
 # Etc
 style.css.map
 .DS_store
+main.css
+main.css.map
