@@ -4,9 +4,7 @@
       @content;
     }
   }
-}
 
-@mixin responsive($screen) {
   @if ($screen == 'D') {
     @media screen and(min-width: 1200px) {
       @content;
