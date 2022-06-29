@@ -90,4 +90,21 @@
       }
     }
   }
+
+  @include responsive(T) {
+    padding-left: 3rem;
+    .skillsWrap {
+      .feSkillList {
+        justify-content: flex-start;
+        max-width: 51rem;
+        padding: 0 3rem;
+      }
+
+      .etcSkillList {
+        justify-content: flex-start;
+        max-width: 51rem;
+        padding: 0 3rem;
+      }
+    }
+  }
 }

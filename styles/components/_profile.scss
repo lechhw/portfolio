@@ -37,4 +37,30 @@
       text-align: center;
     }
   }
+
+  @include responsive(T) {
+    padding-left: 2.6rem;
+    margin-bottom: 4rem;
+
+    .profileTitle {
+      margin-bottom: 3rem;
+    }
+
+    .profileWrap {
+      flex-direction: row;
+      align-items: flex-start;
+      padding-left: 3.6rem;
+
+      .profileImg {
+        width: 13rem;
+        height: 13rem;
+        margin-right: 5rem;
+      }
+
+      .intro {
+        padding-top: 2rem;
+        text-align: left;
+      }
+    }
+  }
 }
