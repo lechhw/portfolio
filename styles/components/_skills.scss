@@ -1,0 +1,93 @@
+.skills {
+  .skillTitle {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: $yellow;
+  }
+
+  .skillsWrap {
+    width: 100%;
+
+    .feBadge {
+      @include flexbox(start);
+      margin-bottom: 1rem;
+      color: $dark;
+      letter-spacing: 0.05em;
+
+      &::after {
+        display: inline-block;
+        content: '';
+        height: 1px;
+        margin-left: 0.5rem;
+        flex-grow: 1;
+        background-color: $gray;
+      }
+    }
+
+    .feSkillList {
+      @include flexbox(center, start);
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+
+      .feSkillItem {
+        @include column-flexbox(start, center);
+        padding: 1rem;
+        text-align: center;
+
+        img {
+          display: block;
+          width: 5rem;
+          height: 5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        span {
+          font-size: 0.9rem;
+          color: $dark;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .etcBadge {
+      @include flexbox(start);
+      margin-bottom: 1rem;
+      color: $dark;
+      letter-spacing: 0.05em;
+
+      &::after {
+        display: inline-block;
+        content: '';
+        height: 1px;
+        margin-left: 0.5rem;
+        flex-grow: 1;
+        background-color: $gray;
+      }
+    }
+
+    .etcSkillList {
+      @include flexbox(center, start);
+      flex-wrap: wrap;
+
+      .etcSkillItem {
+        @include column-flexbox(start, center);
+        padding: 1rem;
+        text-align: center;
+
+        img {
+          display: block;
+          width: 5rem;
+          height: 5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        span {
+          font-size: 0.9rem;
+          color: $dark;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
