@@ -1,15 +1,15 @@
 .gnb {
   width: 100%;
 
-  .tabList {
+  .tab-list {
     @include flexbox();
     border-bottom: 1px solid $gray;
   }
 
-  .tabItem {
+  .tab-item {
     width: 50%;
 
-    button {
+    .tab {
       width: 100%;
       padding: 1rem 0;
       color: $gray;
@@ -25,12 +25,12 @@
   }
 
   @include responsive(T) {
-    .tabList {
+    .tab-list {
       justify-content: flex-start;
       padding-left: 1.5rem;
     }
 
-    .tabItem {
+    .tab-item {
       width: 8rem;
       margin-right: 1rem;
 
@@ -38,14 +38,14 @@
         margin-right: 0;
       }
 
-      button {
+      .tab {
         font-size: 1.4rem;
       }
     }
   }
 
   @include responsive(D) {
-    .tabList {
+    .tab-list {
       padding-left: 1rem;
     }
   }

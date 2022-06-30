@@ -4,10 +4,10 @@
   text-align: center;
   margin-bottom: 1rem;
 
-  .mainIntro {
+  &-intro {
     margin-bottom: 4rem;
 
-    .mainTitle {
+    .main-title {
       color: $black;
       font-size: 3.6rem;
       margin-bottom: 1.6rem;
@@ -24,7 +24,7 @@
     }
   }
 
-  .mainInfo {
+  .main-info {
     .info {
       font-size: 1rem;
       margin-bottom: 1.4rem;
@@ -39,11 +39,9 @@
         color: $dark;
       }
 
-      &.emailWrap {
-        a:hover,
-        a:active {
-          color: $gray;
-        }
+      a:hover,
+      a:active {
+        color: $gray;
       }
     }
   }
@@ -51,8 +49,8 @@
   @include responsive(T) {
     margin-bottom: 4rem;
 
-    .mainIntro {
-      .mainTitle {
+    &-intro {
+      .main-title {
         font-size: 4.6rem;
 
         strong {
@@ -61,7 +59,7 @@
       }
     }
 
-    .mainInfo {
+    .main-info {
       @include flexbox();
 
       .info {
@@ -80,14 +78,14 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    .mainIntro {
+    &-intro {
       flex: 1 1 50%;
       text-align: left;
       padding-top: 2rem;
       padding-left: 2rem;
       margin-bottom: 0;
 
-      .mainTitle {
+      .main-title {
         margin-bottom: 0.8rem;
         font-size: 4.6rem;
 
@@ -97,7 +95,7 @@
       }
     }
 
-    .mainInfo {
+    .main-info {
       justify-content: flex-start;
       flex: 1 1 50%;
       padding-top: 3.8rem;

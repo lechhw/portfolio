@@ -1,15 +1,15 @@
 .skills {
-  .skillTitle {
+  &-title {
     margin-bottom: 2rem;
     font-size: 1.6rem;
     font-style: italic;
     color: $yellow;
   }
 
-  .skillsWrap {
+  &-wrapper {
     width: 100%;
 
-    .feBadge {
+    .front {
       @include flexbox(start);
       margin-bottom: 1rem;
       color: $dark;
@@ -23,14 +23,14 @@
         flex-grow: 1;
         background-color: $gray;
       }
-    }
 
-    .feSkillList {
-      @include flexbox(center, start);
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
+      &-skill-list {
+        @include flexbox(center, start);
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
 
-      .feSkillItem {
+      &-skill-item {
         @include column-flexbox(start, center);
         padding: 1rem;
         text-align: center;
@@ -50,7 +50,7 @@
       }
     }
 
-    .etcBadge {
+    .etc {
       @include flexbox(start);
       margin-bottom: 1rem;
       color: $dark;
@@ -64,13 +64,12 @@
         flex-grow: 1;
         background-color: $gray;
       }
-    }
 
-    .etcSkillList {
-      @include flexbox(center, start);
-      flex-wrap: wrap;
-
-      .etcSkillItem {
+      &-skill-list {
+        @include flexbox(center, start);
+        flex-wrap: wrap;
+      }
+      &-skill-item {
         @include column-flexbox(start, center);
         padding: 1rem;
         text-align: center;
@@ -92,18 +91,21 @@
   }
 
   @include responsive(T) {
-    padding-left: 3rem;
-    .skillsWrap {
-      .feSkillList {
-        justify-content: flex-start;
-        max-width: 51rem;
-        padding: 0 3rem;
+    &-wrapper {
+      .front {
+        &-skill-list {
+          justify-content: flex-start;
+          max-width: 51rem;
+          padding: 0 3rem;
+        }
       }
 
-      .etcSkillList {
-        justify-content: flex-start;
-        max-width: 51rem;
-        padding: 0 3rem;
+      .etc {
+        &-skill-list {
+          justify-content: flex-start;
+          max-width: 51rem;
+          padding: 0 3rem;
+        }
       }
     }
   }

@@ -21,8 +21,8 @@
   <body>
     <header class="header">
       <div class="banner">
-        <div class="mainIntro">
-          <h1 class="mainTitle">
+        <div class="banner-intro">
+          <h1 class="main-title">
             <strong>Front-end</strong><br />
             Developer
           </h1>
@@ -32,8 +32,8 @@
           </p>
         </div>
 
-        <dl class="mainInfo">
-          <div class="info emailWrap">
+        <dl class="main-info">
+          <div class="info">
             <dt>Email</dt>
             <dd>
               <a href="mailto:changhwanlee94@gmail.com"
@@ -42,12 +42,12 @@
             </dd>
           </div>
 
-          <div class="info nameWrap">
+          <div class="info">
             <dt>Name</dt>
             <dd>Lee changhwan</dd>
           </div>
 
-          <div class="info birthWrap">
+          <div class="info">
             <dt>Birthday</dt>
             <dd>1994-05-26</dd>
           </div>
@@ -55,12 +55,12 @@
       </div>
 
       <nav class="gnb">
-        <ul class="tabList">
-          <li class="tabItem">
-            <button>Projects</button>
+        <ul class="tab-list">
+          <li class="tab-item">
+            <button class="tab" type="button" aria-label="Projects 섹션으로 이동">Projects</button>
           </li>
           <li class="tabItem">
-            <button>About Me</button>
+            <button class="tab" type="button" aria-label="About Me 섹션으로 이동">About Me</button>
           </li>
         </ul>
       </nav>
@@ -69,13 +69,13 @@
     <div class="contents">
       <section id="about" class="content">
         <div class="profile">
-          <h2 class="profileTitle">Profile.</h2>
-          <div class="profileWrap">
-            <div class="profileImg">
+          <h2 class="profile-title">Profile.</h2>
+          <div class="profile-wrapper">
+            <div class="profile-image">
               <img src="./images/profile.jpg" alt="profile" />
             </div>
 
-            <div class="intro">
+            <div class="profile-intro">
               <p>
                 안녕하세요 프론트엔드 개발자를 지원하는 이창환입니다.<br />
                 2022년 2월부터 프론트엔드 개발자라는 목표를 가지고 하나씩
@@ -96,59 +96,60 @@
         </div>
 
         <div class="skills">
-          <h2 class="skillTitle">Skills.</h2>
+          <h2 class="skills-title">Skills.</h2>
 
-          <div class="skillsWrap">
-            <h5 class="feBadge">Front-end</h5>
-            <ul class="feSkillList">
-              <li class="feSkillItem">
+          <div class="skills-wrapper">
+            <h5 class="front">Front-end</h5>
+            <ul class="front-skill-list">
+              <li class="front-skill-item">
                 <img src="./images/html.svg" alt="logo" />
                 <span>HTML5</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/css.svg" alt="logo" />
                 <span>CSS</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/js.svg" alt="logo" />
                 <span>Javascript<br />(Vanilla)</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/js6.svg" alt="logo" />
                 <span>Javascript<br />ES6</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/react.png" alt="logo" />
                 <span>React</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/sass.svg" alt="logo" />
                 <span>Sass/SCSS</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/postcss.svg" alt="logo" />
                 <span>PostCSS</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/firebase.svg" alt="logo" />
                 <span>Firebase</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/postman.svg" alt="logo" />
                 <span>Postman</span>
               </li>
-              <li class="feSkillItem">
+              <li class="front-skill-item">
                 <img src="./images/netlify.svg" alt="logo" />
                 <span>Netlify</span>
               </li>
             </ul>
-            <h5 class="etcBadge">Etc.</h5>
-            <ul class="etcSkillList">
-              <li class="etcSkillItem">
+
+            <h5 class="etc">Etc.</h5>
+            <ul class="etc-skill-list">
+              <li class="etc-Skill-item">
                 <img src="./images/git.svg" alt="logo" />
                 <span>Git</span>
               </li>
-              <li class="etcSkillItem">
+              <li class="etc-skill-item">
                 <img src="./images/figma.svg" alt="logo" />
                 <span>Figma</span>
               </li>

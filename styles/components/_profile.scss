@@ -1,17 +1,17 @@
 .profile {
   margin-bottom: 3rem;
 
-  .profileTitle {
+  &-title {
     font-size: 1.6rem;
     font-style: italic;
     color: $yellow;
     margin-bottom: 2rem;
   }
 
-  .profileWrap {
+  .profile-wrapper {
     @include column-flexbox(start);
 
-    .profileImg {
+    .profile-image {
       position: relative;
       width: 12rem;
       height: 12rem;
@@ -30,7 +30,7 @@
       }
     }
 
-    .intro {
+    .profile-intro {
       font-size: 0.95rem;
       line-height: 1.5;
       color: $dark;
@@ -39,25 +39,26 @@
   }
 
   @include responsive(T) {
-    padding-left: 2.6rem;
     margin-bottom: 4rem;
 
-    .profileTitle {
+    &-title {
       margin-bottom: 3rem;
     }
 
-    .profileWrap {
+    .profile-wrapper {
       flex-direction: row;
       align-items: flex-start;
       padding-left: 3.6rem;
 
-      .profileImg {
+      .profile-image {
+        flex-grow: 0;
+        flex-shrink: 0;
         width: 13rem;
         height: 13rem;
         margin-right: 5rem;
       }
 
-      .intro {
+      .profile-intro {
         padding-top: 2rem;
         text-align: left;
       }
