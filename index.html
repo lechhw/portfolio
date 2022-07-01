@@ -58,6 +58,7 @@
         <ul class="tab-list">
           <li class="tab-item">
             <button
+              id="projects-tab"
               class="tab"
               type="button"
               aria-label="Projects 섹션으로 이동"
@@ -67,7 +68,8 @@
           </li>
           <li class="tab-item">
             <button
-              class="tab"
+              id="about-tab"
+              class="tab active"
               type="button"
               aria-label="About Me 섹션으로 이동"
             >
@@ -79,7 +81,7 @@
     </header>
 
     <div class="contents">
-      <section id="about" class="about content">
+      <section id="about" class="about content show">
         <div class="profile">
           <h2 class="profile-badge">Profile.</h2>
 
@@ -121,7 +123,7 @@
               </li>
               <li class="front-skill-item">
                 <img src="./images/css.svg" alt="logo" />
-                <span>CSS</span>
+                <span>CSS3</span>
               </li>
               <li class="front-skill-item">
                 <img src="./images/js.svg" alt="logo" />
@@ -379,5 +381,7 @@
       </a>
       <p>&copy; 2022 | Lee Chang Hwan. All rights reserved.</p>
     </footer>
+
+    <script src="./js/tab-menu.js"></script>
   </body>
 </html>

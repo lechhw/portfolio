@@ -17,6 +17,10 @@
       font-weight: 700;
       transition: color 200ms ease-in-out;
 
+      &.active {
+        color: $black;
+      }
+
       &:hover,
       &:active {
         color: $black;

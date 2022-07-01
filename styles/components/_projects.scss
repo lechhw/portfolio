@@ -1,4 +1,10 @@
 .projects {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
   &-badge {
     margin-bottom: 2rem;
     font-size: 1.6rem;
