@@ -8,13 +8,14 @@
   &-badge {
     margin-bottom: 2rem;
     font-size: 1.6rem;
+    font-style: italic;
     color: $yellow;
   }
 
   .project-item {
     @include flexbox();
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -22,6 +23,10 @@
   }
 
   @include responsive(T) {
+    &-badge {
+      margin-bottom: 3rem;
+    }
+
     .project-list {
       @include flexbox(center, start);
       flex-wrap: wrap;
@@ -29,7 +34,7 @@
 
     .project-item {
       width: 50%;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
 
       &:nth-child(3),
       &:nth-child(4) {

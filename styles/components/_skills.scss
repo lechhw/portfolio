@@ -1,6 +1,6 @@
 .skills {
   &-badge {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.6rem;
     font-style: italic;
     color: $yellow;
@@ -69,6 +69,7 @@
         @include flexbox(center, start);
         flex-wrap: wrap;
       }
+
       &-skill-item {
         @include column-flexbox(start, center);
         padding: 1rem;
@@ -98,6 +99,10 @@
           max-width: 51rem;
           padding: 0 3rem;
         }
+
+        &-skill-item {
+          padding: 1.2rem 1.5rem;
+        }
       }
 
       .etc {
@@ -105,6 +110,10 @@
           justify-content: flex-start;
           max-width: 51rem;
           padding: 0 3rem;
+        }
+
+        &-skill-item {
+          padding: 1.2rem 1.5rem;
         }
       }
     }

@@ -1,6 +1,28 @@
 .contents {
-  width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
+  @include flexbox();
   padding: 0 1rem;
+
+  .content {
+    width: 100%;
+    max-width: 65rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    &.projects {
+      padding-bottom: 4rem;
+    }
+  }
+
+  @include responsive(T) {
+    padding: 0 2rem;
+
+    .content {
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+
+      &.projects {
+        padding-bottom: 4.5rem;
+      }
+    }
+  }
 }
