@@ -1,0 +1,104 @@
+.project-card {
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &-title {
+    @include flexbox();
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: $black;
+    text-align: center;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.4rem;
+    }
+  }
+
+  &-content {
+    .project-image {
+      width: 100%;
+      margin-bottom: 1rem;
+      border: 1px solid $dark;
+      border-radius: 2px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .detail-list {
+      margin-bottom: 1rem;
+    }
+
+    .detail-item {
+      @include flexbox(start, start);
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: $dark;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      dt {
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        &::after {
+          content: ':';
+          display: inline-block;
+          margin-left: 0.1rem;
+          margin-right: 0.3rem;
+        }
+      }
+
+      .badge-group {
+        @include flexbox(start);
+        flex-wrap: wrap;
+
+        div {
+          padding: 0.2rem 0.3rem;
+          margin-right: 0.3rem;
+          margin-bottom: 0.3rem;
+          font-size: 0.8rem;
+          font-weight: 500;
+          background-color: $lightGray;
+          border-radius: 4px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .link-group {
+      @include flexbox();
+
+      a {
+        @include flexbox();
+        flex: 1 1 50%;
+        height: 3rem;
+        margin-right: 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: 1px solid $lightGray;
+        border-radius: 4px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          background-color: $whiteGray;
+        }
+      }
+    }
+  }
+}

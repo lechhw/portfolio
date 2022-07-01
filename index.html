@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -57,10 +57,22 @@
       <nav class="gnb">
         <ul class="tab-list">
           <li class="tab-item">
-            <button class="tab" type="button" aria-label="Projects 섹션으로 이동">Projects</button>
+            <button
+              class="tab"
+              type="button"
+              aria-label="Projects 섹션으로 이동"
+            >
+              Projects
+            </button>
           </li>
           <li class="tab-item">
-            <button class="tab" type="button" aria-label="About Me 섹션으로 이동">About Me</button>
+            <button
+              class="tab"
+              type="button"
+              aria-label="About Me 섹션으로 이동"
+            >
+              About Me
+            </button>
           </li>
         </ul>
       </nav>
@@ -165,91 +177,80 @@
           <div class="project">
             <ul class="project-list">
               <li class="project-item">
-                <button
-                  class="drawer-btn"
-                  type="button"
-                  aria-label="Basic Mini Projects 펼쳐보기"
-                >
-                Basic Mini Projects
-                  <div class="chevron-icon">
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                <article class="project-card">
+                  <div class="project-card-title">
+                    <img
+                      src="./images/mini-projects-logo.svg"
+                      alt="project logo"
+                    />
+                    <h3>Basic Mini projects</h3>
                   </div>
-                </button>
 
-                <div class="project-info">
-                  
+                  <div class="project-card-content">
                     <div class="project-image">
-                      <img src="./images/mini-projects.png" alt="project capture" />
+                      <img
+                        src="./images/mini-projects.png"
+                        alt="project image"
+                      />
                     </div>
-  
-                    <div class="project-detail">
-                      <dl class="project-detail-list">
-                        <div class="project-detail-item">
-                          <dt>제목</dt>
-                          <dd>Basic Mini Projects</dd>
-                        </div>
-                        <div class="project-detail-item">
-                          <dt>내용</dt>
-                          <dd>10 Mini Projects</dd>
-                        </div>
-                        <div class="project-detail-item">
-                          <dt>핵심기술</dt>
-                          <dd class="badge-group">
-                            <div>HTML5</div>
-                            <div>CSS3</div>
-                            <div>JS(ES6+)</div>
-                          </dd>
-                        </div>
-                      </dl>
 
-                      <div class="link-group">
-                        <a
-                          href="https://github.com/lechhw/Basic-Mini-Projects"
-                          target="_blank"
-                          >GitHub</a
-                          aria-label="Basic Mini Projects 깃허브 페이지로 이동"
-                        >
-                        <a
-                          href="https://lechhw.github.io/Basic-Mini-Projects"
-                          target="_blank"
-                          aria-label="Basic Mini Projects 데모 사이트로 이동"
-                          >DemoSite</a
-                        >
+                    <dl class="detail-list">
+                      <div class="detail-item">
+                        <dt>제목</dt>
+                        <dd>Basic Mini projects</dd>
                       </div>
+                      <div class="detail-item">
+                        <dt>내용</dt>
+                        <dd>10 Mini projects</dd>
+                      </div>
+                      <div class="detail-item">
+                        <dt>핵심기술</dt>
+                        <dd class="badge-group">
+                          <div>HTML5</div>
+                          <div>CSS3</div>
+                          <div>JS(ES6+)</div>
+                        </dd>
+                      </div>
+                    </dl>
+
+                    <div class="link-group">
+                      <a
+                        href="ttps://github.com/lechhw/Basic-Mini-Projects"
+                        aria-label="Basic Mini projects 깃허브 페이지로 이동"
+                        >GitHub</a
+                      >
+                      <a
+                        href="https://lechhw.github.io/Basic-Mini-Projects"
+                        aria-label="Basic Mini projects 데모 사이트로 이동"
+                        >DemoSite</a
+                      >
                     </div>
-                  
-
-                 
-                </div>
+                  </div>
+                </article>
               </li>
+
               <li class="project-item">
-                <button
-                  class="drawer-btn"
-                  type="button"
-                  aria-label="YouTube Clone 펼쳐보기"
-                >
-                  YouTube Clone
-                  <div class="chevron-icon">
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </div>
-                </button>
-
-                <div class="project-info">
-                  <div class="project-image">
-                    <img src="./images/youtube.png" alt="project capture" />
+                <article class="project-card">
+                  <div class="project-card-title">
+                    <img src="./images/youtube-logo.svg" alt="project logo" />
+                    <h3>YouTube Clone</h3>
                   </div>
 
-                  <div class="project-detail">
-                    <dl class="project-detail-list">
-                      <div class="project-detail-item">
+                  <div class="project-card-content">
+                    <div class="project-image">
+                      <img src="./images/youtube.png" alt="project image" />
+                    </div>
+
+                    <dl class="detail-list">
+                      <div class="detail-item">
                         <dt>제목</dt>
                         <dd>YouTube Clone</dd>
                       </div>
-                      <div class="project-detail-item">
+                      <div class="detail-item">
                         <dt>내용</dt>
                         <dd>YouTube API service</dd>
                       </div>
-                      <div class="project-detail-item">
+                      <div class="detail-item">
                         <dt>핵심기술</dt>
                         <dd class="badge-group">
                           <div>React</div>
@@ -262,50 +263,44 @@
                     <div class="link-group">
                       <a
                         href="https://github.com/lechhw/YouTube-Clone"
-                        target="_blank"
-                        >GitHub</a
                         aria-label="YouTube Clone 깃허브 페이지로 이동"
+                        >GitHub</a
                       >
                       <a
-                        href="https://lechhw-youtube-clone.netlify.app/"
-                        target="_blank"
+                        href="https://lechhw-youtube-clone.netlify.app"
                         aria-label="YouTube Clone 데모 사이트로 이동"
                         >DemoSite</a
                       >
                     </div>
                   </div>
-                  
-                </div>
+                </article>
               </li>
-              
+
               <li class="project-item">
-                <button
-                  class="drawer-btn"
-                  type="button"
-                  aria-label="Business Card Maker 펼쳐보기"
-                >
-                Business Card Maker
-                  <div class="chevron-icon">
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </div>
-                </button>
-
-                <div class="project-info">
-                  <div class="project-image">
-                    <img src="./images/card-maker.png" alt="project capture" />
+                <article class="project-card">
+                  <div class="project-card-title">
+                    <img
+                      src="./images/card-maker-logo.svg"
+                      alt="project logo"
+                    />
+                    <h3>Business Card Maker</h3>
                   </div>
 
-                  <div class="project-detail">
-                    <dl class="project-detail-list">
-                      <div class="project-detail-item">
+                  <div class="project-card-content">
+                    <div class="project-image">
+                      <img src="./images/card-maker.png" alt="project image" />
+                    </div>
+
+                    <dl class="detail-list">
+                      <div class="detail-item">
                         <dt>제목</dt>
                         <dd>Business Card Maker</dd>
                       </div>
-                      <div class="project-detail-item">
+                      <div class="detail-item">
                         <dt>내용</dt>
-                        <dd>💼 명함 제작 웹 어플리케이션</dd>
+                        <dd>명함 제작 웹 어플리케이션</dd>
                       </div>
-                      <div class="project-detail-item">
+                      <div class="detail-item">
                         <dt>핵심기술</dt>
                         <dd class="badge-group">
                           <div>React</div>
@@ -319,48 +314,44 @@
                     <div class="link-group">
                       <a
                         href="https://github.com/lechhw/Business-Card-Maker"
-                        target="_blank"
-                        >GitHub</a
                         aria-label="Business Card Maker 깃허브 페이지로 이동"
+                        >GitHub</a
                       >
                       <a
-                        href="https://lechhw-business-card-maker.netlify.app/"
-                        target="_blank"
+                        href="https://lechhw-business-card-maker.netlify.app"
                         aria-label="Business Card Maker 데모 사이트로 이동"
                         >DemoSite</a
                       >
                     </div>
                   </div>
-                </div>
+                </article>
               </li>
+
               <li class="project-item">
-                <button
-                  class="drawer-btn"
-                  type="button"
-                  aria-label="Weather App 펼쳐보기"
-                >
-                Weather App
-                  <div class="chevron-icon">
-                    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                  </div>
-                </button>
-
-                <div class="project-info">
-                  <div class="project-image">
-                    <img src="./images/weather-app.png" alt="project capture" />
+                <article class="project-card">
+                  <div class="project-card-title">
+                    <img
+                      src="./images/weaher-app-logo.svg"
+                      alt="project logo"
+                    />
+                    <h3>Weather App</h3>
                   </div>
 
-                  <div class="project-detail">
-                    <dl class="project-detail-list">
-                      <div class="project-detail-item">
+                  <div class="project-card-content">
+                    <div class="project-image">
+                      <img src="./images/weather-app.png" alt="project image" />
+                    </div>
+
+                    <dl class="detail-list">
+                      <div class="detail-item">
                         <dt>제목</dt>
                         <dd>Weather App</dd>
                       </div>
-                      <div class="project-detail-item">
+                      <div class="detail-item">
                         <dt>내용</dt>
-                        <dd>☀️ 날씨 검색 웹 어플리케이션</dd>
+                        <dd>날씨 검색 웹 어플리케이션</dd>
                       </div>
-                      <div class="project-detail-item">
+                      <div class="detail-item">
                         <dt>핵심기술</dt>
                         <dd class="badge-group">
                           <div>React</div>
@@ -373,20 +364,18 @@
 
                     <div class="link-group">
                       <a
-                        href="https://github.com/lechhw/Weather-App"
-                        target="_blank"
+                        href="https://github.com/lechhw/Business-Card-Maker"
+                        aria-label="Weather App 깃허브 페이지로 이동"
                         >GitHub</a
-                        aria-label="Business Card Maker 깃허브 페이지로 이동"
                       >
                       <a
-                        href="https://lechhw-business-card-maker.netlify.app/"
-                        target="_blank"
-                        aria-label="Business Card Maker 데모 사이트로 이동"
+                        href="https://lechhw-business-card-maker.netlify.app"
+                        aria-label="Weather App 데모 사이트로 이동"
                         >DemoSite</a
                       >
                     </div>
                   </div>
-                </div>
+                </article>
               </li>
             </ul>
           </div>
@@ -395,8 +384,12 @@
     </div>
 
     <footer class="footer">
-      <a class="github-link" href="https://github.com/lechhw" aria-label="이창환의 깃허브 페이지로 이동">
-        <img src="./images/github.svg" alt="logo" aria-hidden="true">
+      <a
+        class="github-link"
+        href="https://github.com/lechhw"
+        aria-label="이창환의 깃허브 페이지로 이동"
+      >
+        <img src="./images/github.svg" alt="logo" aria-hidden="true" />
       </a>
       <p>&copy; 2022 | Lee Chang Hwan. All rights reserved.</p>
     </footer>
