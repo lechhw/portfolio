@@ -1,7 +1,15 @@
 .project-card {
+  width: 100%;
+  max-width: 26rem;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 250ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &-title {
     @include flexbox();
@@ -66,7 +74,7 @@
           padding: 0.2rem 0.3rem;
           margin-right: 0.3rem;
           margin-bottom: 0.3rem;
-          font-size: 0.8rem;
+          font-size: 0.75rem;
           font-weight: 500;
           background-color: $lightGray;
           border-radius: 4px;
@@ -95,8 +103,36 @@
           margin-right: 0;
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           background-color: $whiteGray;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    padding: 1.2rem;
+
+    &-title {
+      margin-bottom: 1.2rem;
+      font-size: 1.2rem;
+    }
+
+    &-content {
+      .project-image {
+        margin-bottom: 1.2rem;
+      }
+
+      .detail-list {
+        margin-bottom: 1.2rem;
+      }
+
+      .detail-item {
+        font-size: 1rem;
+
+        .badge-group {
+          font-size: 0.9rem;
         }
       }
     }
