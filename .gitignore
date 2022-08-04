@@ -10,3 +10,5 @@ style.css.map
 .DS_store
 main.css
 main.css.map
+.prettierrc
+package-lock.json

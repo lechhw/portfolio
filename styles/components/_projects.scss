@@ -28,18 +28,13 @@
     }
 
     .project-list {
-      @include flexbox(center, start);
+      @include flexbox(start, start);
       flex-wrap: wrap;
     }
 
     .project-item {
       width: 50%;
       margin-bottom: 4rem;
-
-      &:nth-child(3),
-      &:nth-child(4) {
-        margin-bottom: 0;
-      }
 
       &:nth-child(1),
       &:nth-child(3) {

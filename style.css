@@ -581,48 +581,54 @@ h1 {
       justify-content: flex-start;
       align-items: center;
       padding: 1rem;
+      margin-right: 0.5rem;
       text-align: center; }
+      .skills-wrapper .front-skill-item:last-child {
+        margin-right: 0; }
       .skills-wrapper .front-skill-item img {
         display: block;
-        width: 5rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
         margin-bottom: 0.5rem; }
       .skills-wrapper .front-skill-item span {
         font-size: 0.9rem;
         color: #3f4150;
         font-weight: 500; }
-  .skills-wrapper .etc {
+  .skills-wrapper .back {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1rem;
     color: #3f4150;
     letter-spacing: 0.05em; }
-    .skills-wrapper .etc::after {
+    .skills-wrapper .back::after {
       display: inline-block;
       content: '';
       height: 1px;
       margin-left: 0.5rem;
       flex-grow: 1;
       background-color: #939295; }
-    .skills-wrapper .etc-skill-list {
+    .skills-wrapper .back-skill-list {
       display: flex;
       justify-content: center;
       align-items: flex-start;
       flex-wrap: wrap; }
-    .skills-wrapper .etc-skill-item {
+    .skills-wrapper .back-skill-item {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       padding: 1rem;
-      text-align: center; }
-      .skills-wrapper .etc-skill-item img {
+      text-align: center;
+      margin-right: 0.5rem; }
+      .skills-wrapper .back-skill-item:last-child {
+        margin-right: 0; }
+      .skills-wrapper .back-skill-item img {
         display: block;
-        width: 5rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
         margin-bottom: 0.5rem; }
-      .skills-wrapper .etc-skill-item span {
+      .skills-wrapper .back-skill-item span {
         font-size: 0.9rem;
         color: #3f4150;
         font-weight: 500; }
@@ -630,15 +636,13 @@ h1 {
 @media screen and (min-width: 768px) {
   .skills-wrapper .front-skill-list {
     justify-content: flex-start;
-    max-width: 51rem;
     padding: 0 3rem; }
   .skills-wrapper .front-skill-item {
     padding: 1.2rem 1.5rem; }
-  .skills-wrapper .etc-skill-list {
+  .skills-wrapper .back-skill-list {
     justify-content: flex-start;
-    max-width: 51rem;
     padding: 0 3rem; }
-  .skills-wrapper .etc-skill-item {
+  .skills-wrapper .back-skill-item {
     padding: 1.2rem 1.5rem; } }
 
 .projects {
@@ -663,14 +667,12 @@ h1 {
       margin-bottom: 3rem; }
     .projects .project-list {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: flex-start;
       flex-wrap: wrap; }
     .projects .project-item {
       width: 50%;
       margin-bottom: 4rem; }
-      .projects .project-item:nth-child(3), .projects .project-item:nth-child(4) {
-        margin-bottom: 0; }
       .projects .project-item:nth-child(1), .projects .project-item:nth-child(3) {
         padding-right: 1rem; }
       .projects .project-item:nth-child(2), .projects .project-item:nth-child(4) {
